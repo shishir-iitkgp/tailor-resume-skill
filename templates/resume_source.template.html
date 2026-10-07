@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Your Name - Resume</title>
+<style>
+  @page {
+    size: A4;
+    margin: 16mm 18mm 14mm 18mm;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    color: #1a1a1a;
+    font-size: 10.3pt;
+    line-height: 1.38;
+    margin: 0;
+  }
+  h1, h2, h3, p, ul { margin: 0; padding: 0; }
+
+  /* Header */
+  .name {
+    font-size: 22pt;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #12233d;
+  }
+  .headline {
+    font-size: 11.5pt;
+    font-weight: 600;
+    color: #2a4d7a;
+    margin-top: 2pt;
+  }
+  .subheadline {
+    font-size: 9.5pt;
+    color: #4d4d4d;
+    margin-top: 1pt;
+  }
+  .contact-line {
+    font-size: 9.3pt;
+    color: #333;
+    margin-top: 5pt;
+  }
+  .contact-line span { margin-right: 14pt; }
+  .header-rule {
+    border-bottom: 1.6pt solid #12233d;
+    margin-top: 8pt;
+    margin-bottom: 9pt;
+  }
+
+  /* Section headings */
+  .section {
+    margin-top: 10pt;
+  }
+  .section-title {
+    font-size: 9.6pt;
+    font-weight: 700;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+    color: #12233d;
+    border-bottom: 0.75pt solid #b9c4d3;
+    padding-bottom: 2pt;
+    margin-bottom: 6pt;
+  }
+
+  .summary p { margin-bottom: 4pt; }
+
+  .skills-line { font-size: 9.8pt; color: #262626; }
+
+  /* Experience */
+  .role { margin-bottom: 9pt; }
+  .role:last-child { margin-bottom: 0; }
+  .role-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .role-org {
+    font-size: 10.6pt;
+    font-weight: 700;
+    color: #12233d;
+  }
+  .role-title {
+    font-size: 10.2pt;
+    font-weight: 600;
+    color: #2a4d7a;
+  }
+  .role-dates {
+    font-size: 9.3pt;
+    color: #555;
+    white-space: nowrap;
+  }
+  .role-summary {
+    font-size: 9.8pt;
+    color: #333;
+    margin-top: 1.5pt;
+    margin-bottom: 3pt;
+  }
+  ul.bullets {
+    margin: 0;
+    padding-left: 13pt;
+  }
+  ul.bullets li {
+    margin-bottom: 2.2pt;
+  }
+
+  /* Education */
+  .edu-item { margin-bottom: 5pt; }
+  .edu-item:last-child { margin-bottom: 0; }
+  .edu-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .edu-school { font-weight: 700; font-size: 10pt; color: #12233d; }
+  .edu-degree { font-size: 9.7pt; color: #333; }
+  .edu-year { font-size: 9.3pt; color: #555; }
+
+  ul.compact-list {
+    margin: 0;
+    padding-left: 13pt;
+  }
+  ul.compact-list li { margin-bottom: 1.6pt; }
+
+  .two-col {
+    display: flex;
+    gap: 24pt;
+  }
+  .two-col > div { flex: 1; }
+</style>
+</head>
+<body>
+
+  <div class="name">YOUR NAME</div>
+  <div class="headline">Your Headline (e.g. Product Executive)</div>
+  <div class="subheadline">Your sub-headline (e.g. area of focus)</div>
+  <div class="contact-line">
+    <span>+1 555 555 5555</span><span>you@example.com</span><span>linkedin.com/in/yourprofile</span>
+  </div>
+  <div class="header-rule"></div>
+
+  <div class="section summary">
+    <div class="section-title">Executive Summary</div>
+    <p>One or two sentences summarizing your experience and seniority.</p>
+    <p>Optional second paragraph with headline metrics or scope.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Core Expertise</div>
+    <div class="skills-line">Skill One &middot; Skill Two &middot; Skill Three &middot; Skill Four &middot; Skill Five &middot; Skill Six &middot; Skill Seven &middot; Skill Eight</div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Experience</div>
+
+    <div class="role">
+      <div class="role-header">
+        <span class="role-org">Company Name</span>
+        <span class="role-dates">Mon YYYY &ndash; Present</span>
+      </div>
+      <div class="role-title">Your Title</div>
+      <div class="role-summary">One-line summary of scope and impact in this role.</div>
+      <ul class="bullets">
+        <li>Bullet one.</li>
+        <li>Bullet two.</li>
+        <li>Bullet three.</li>
+      </ul>
+    </div>
+
+    <div class="role">
+      <div class="role-header">
+        <span class="role-org">Previous Company</span>
+        <span class="role-dates">Mon YYYY &ndash; Mon YYYY</span>
+      </div>
+      <div class="role-title">Your Title</div>
+      <div class="role-summary">One-line summary of scope and impact in this role.</div>
+      <ul class="bullets">
+        <li>Bullet one.</li>
+        <li>Bullet two.</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="section">
+    <div class="section-title">Education</div>
+    <div class="edu-item">
+      <div class="edu-header">
+        <span class="edu-school">School Name</span>
+        <span class="edu-year">YYYY</span>
+      </div>
+      <div class="edu-degree">Degree &middot; Details</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Thought Leadership &amp; Industry Engagement</div>
+    <ul class="compact-list">
+      <li>Optional: speaking, mentoring, publications, awards.</li>
+    </ul>
+  </div>
+
+</body>
+</html>
